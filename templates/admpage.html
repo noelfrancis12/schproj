@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <title>Site page</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+  h1,p{
+    color: rgb(35, 170, 170);
+  }
+  h1:hover,p:hover{
+    color: black;
+    opacity: 0.7;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+html,
+body {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  height: 100%;
+  width: 100%; 
+  background: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+ 
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.container-fostrap {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+.fostrap-logo {
+  width: 100px;
+  margin-bottom:15px
+}
+h1.heading {
+  color: #fff;
+  font-size: 1.15em;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+  color: #505050;
+}
+@media (min-width: 450px) {
+  h1.heading {
+    font-size: 3.55em;
+  }
+}
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.05em;
+  }
+}
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 3.25em;
+    margin: 0 0 0.3em;
+  }
+} 
+.card {
+  display: block; 
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+}
+.card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.img-card {
+  width: 100%;
+  height:200px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  display:block;
+    overflow: hidden;
+}
+.img-card img{
+  width: 100%;
+  height: 200px;
+  object-fit:cover; 
+  transition: all .25s ease;
+} 
+.card-content {
+  padding:15px;
+  text-align:left;
+}
+.card-title {
+  margin-top:0px;
+  font-weight: 700;
+  font-size: 1.65em;
+}
+.card-title a {
+  color: #000;
+  text-decoration: none !important;
+}
+.card-read-more {
+  border-top: 1px solid #D4D4D4;
+}
+.card-read-more a {
+  text-decoration: none !important;
+  padding:10px;
+  font-weight:600;
+  text-transform: uppercase
+}
+body{
+  background-image: url(https://wallpaperaccess.com/full/358821.jpg);height:fit-content ;
+  background-size:cover;
+}
+#bgi{
+  background-image: url(https://th.bing.com/th/id/OIP.WLvcUPm2anD5JeojctkPsgHaEK?w=325&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+  height: fit-content;
+  width: fit-content;
+}
+</style>
+
+</head>
+<body >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'home' %}">Eduexample</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'addc' %}">Add course</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'adds' %}">Add student</a>
+            </li>
+            
+              
+
+          </ul>
+          
+            
+        
+        </div>
+      </nav>
+      
+     
+
+
+
+<!--card 1-->
+      
+    <div class="card-group ">
+    
+       <div class="card img-fluid" style="width: 500px;height: 400px;">
+        <img class="card-img-top" src="https://www.bing.com/th?id=OIP.ozF0UsXY05LopA9rwvV-4AHaHa&w=150&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="card image" style="width:100%;height:400px;;">
+         <div class="card-img-overlay">
+        <a href="{% url 'adds' %}"><h1 class="card-title" style="text-align: center;background-color: aquamarine;" >Add student</h1></a>
+          
+            </div> 
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+     
+     <div class="card img-fluid" style="width: 500px;height: 400px;">
+        <img class="card-img-top" src="https://th.bing.com/th?id=OIP.PbZxWg-glUmCtylwvUrL6wHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="card image" style="width:100%;height:400px;;">
+         <div class="card-img-overlay">
+          <a href="{% url 'addc'  %}"><h1 class="card-title" style="text-align: center;background-color: aquamarine;" >Add course</h1></a>
+            </div>
+           </div> 
+    
+</div><br>
+<!--card 2-->
+     
+    <div class="card-group ">
+    
+       <div class="card img-fluid" style="width: 500px;height: 400px;">
+         <img class="card-img-top" src="https://th.bing.com/th?id=OIP.zjrNr6oz4Zh8aUkE5-H0oQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="card image" style="width:100%;height:400px;;" >
+         <div class="card-img-overlay">
+        <a href="#"><h1 class="card-title" style="text-align: center;background-color: aquamarine;" >Show teacher</h1></a>
+          
+            </div> 
+         </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+     
+     <div class="card img-fluid" style="width: 500px;height: 400px;">
+         <img class="card-img-top" src="https://www.bing.com/th?id=OIP.xaSzX1bqOntbqY4D81qWKgHaHa&w=150&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"  style="width:100%;height:400px;;" alt="">
+         <div class="card-img-overlay">
+          <a href="#"><h1 class="card-title" style="text-align: center;background-color: aquamarine;" >Show student</h1></a>
+            </div>
+           </div> 
+        </div>
+        <center>
+        <button type="submit"class="bg-info" >LOGOUT</button><br>
+    </center>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {% block content %}
+      {% endblock %}
+</body>
+</html>
