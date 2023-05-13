@@ -3,7 +3,7 @@
 <head>
     
     
-    <title>College site</title>
+    <title>User page</title>
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -140,18 +140,12 @@ body{
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'addc' %}">Add course</a>
+              <a class="nav-link" href="#">Edit profile</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'adds' %}">Add student</a>
+              <a class="nav-link" href="{% url 'seepr' %}">See profile</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'show' %}">Show student</a>
-            </li> 
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'showt' %}">Show Teacher</a>
-            </li>  
-
+            
           </ul>
           <form class="form-inline my-2 my-lg-0">
             
@@ -161,11 +155,63 @@ body{
                   </li> 
             </ul>
         
-      </form> 
+      </form>
             
         
         </div>
       </nav>
+      
+     
+
+
+
+<!--card 1-->
+      
+    <div class="card-group">
+    
+       <div class="card img-fluid" style="width: 500px;height: 400px;">
+        <img class="card-img-top" src="https://www.bing.com/th?id=OIP.ozF0UsXY05LopA9rwvV-4AHaHa&w=150&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="card image" style="width:100%;height:400px;;">
+         <div class="card-img-overlay">
+        <a href="{% url 'editt' %}"><h1 class="card-title" style="text-align: center;background-color: aquamarine;" >Edit Profile</h1></a>
+          
+            </div> 
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+     
+     <div class="card img-fluid" style="width: 500px;height: 400px;">
+        <img class="card-img-top" src="https://th.bing.com/th?id=OIP.PbZxWg-glUmCtylwvUrL6wHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="card image" style="width:100%;height:400px;;">
+         <div class="card-img-overlay">
+          <a href="{% url 'seepr' %}"><h1 class="card-title" style="text-align: center;background-color: aquamarine;" >See Profile</h1></a>
+            </div>
+           </div> 
+    
+</div><br>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
       {% block content %}
       {% endblock %}
 </body>
